@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/css-example.css">
+  <title>CSS-example</title>
+</head>
+
+<body>
+  <!-- #region 进场加载动画 -->
+  <section class="loading-wrap">
+    <div class="anim-loading"></div>
+    <div class="loading-left-wrap">
+      <div class="door-loading-bar left-loading-bar"></div>
+    </div>
+    <div class="loading-right-wrap">
+      <div class="door-loading-bar right-loading-bar"></div>
+    </div>
+  </section>
+  <!-- #endregion  -->
+
+  <!-- #region 顶部 -->
+  <section>
+    <!-- #region 导航栏 -->
+    <nav class="nav-wrap">
+
+      <!-- #region 移动端导航栏 -->
+
+      <!-- 三明治导航栏图标 -->
+      <div class="phone-menu-btn-wrap">
+        <input type="checkbox" id="phone-menu">
+        <label for="phone-menu" class="phone-menu">
+          <img src="./assets/imgs/导航栏.svg" alt="">
+          <span></span>
+        </label>
+
+
+        <div class="phone-nav-list-wrap">
+          <div class="phone-personal-info">
+
+            <!-- 头像 -->
+            <div class="phone-personal-img">
+              <img src="./assets/imgs/firstview-2.png" alt="">
+            </div>
+
+            <!-- 用户名 -->
+            <div class="phone-personal-name">Lumina</div>
+
+            <!-- 介绍 -->
+            <div class="phone-personal-brief">群星仅是画师的一瞬, 我们也是.</div>
+
+            <!-- 用户信息 -->
+            <table class="phone-personal-detail">
+              <thead>
+                <tr>
+                  <th>文章</th>
+                  <th>标签</th>
+                  <th>分类</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- 导航栏 -->
+            <div class="phone-nav-list">
+              <ul>
+                <li>首页</li>
+                <li>
+                  <input id="phone-nav-list-classify" type="checkbox">
+                  <label for="phone-nav-list-classify" class="phone-nav-list-classify">归档</label>
+
+                  <ul class="phone-nav-list-items">
+                    <li>游戏</li>
+                    <li>音乐</li>
+                    <li>动漫</li>
+                  </ul>
+                </li>
+                <li>留言板</li>
+                <li>时间轴</li>
+
+                <li class="phone-nav-search">
+                  <label for="phone-nav-search"><img src="./assets/imgs/搜索.svg" alt=""></label>
+                  <input id="phone-nav-search" type="search" placeholder="搜索...">
+                  <span></span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- #endregion  -->
+
+
+      <!-- #region 桌面端导航栏 -->
+      <ul>
+        <li class="nav-title">Lumina's Blog</li>
+        <div class="nav-list">
+          <li>首页
+          </li>
+          <li>归档
+            <ul class="nav-list-items">
+              <li>游戏</li>
+              <li>音乐</li>
+              <li>动漫</li>
+            </ul>
+          </li>
+          <li>留言板</li>
+          <li>时间轴</li>
+
+          <li class="nav-search">
+            <label for="nav-search"><img src="./assets/imgs/搜索.svg" alt=""></label>
+            <input id="nav-search" type="search" placeholder="搜索...">
+            <span></span>
+          </li>
+        </div>
+      </ul>
+
+      <!-- #endregion  -->
+
+    </nav>
+    <!-- #endregion  -->
+
+    <div class="first-view-wrap">
+      <!-- #region 立方体 -->
+      <div class="cube">
+        <div class="surface top"><img src="./assets/imgs/firstview-2.png"></div>
+        <div class="surface bottom"><img src="./assets/imgs/firstview-1.jpg"></div>
+        <div class="surface left"><img src="./assets/imgs/door-left.jpg"></div>
+        <div class="surface right"><img src="./assets/imgs/door-right.jpg"></div>
+        <div class="surface front"><img src="./assets/imgs/door-left.jpg"></div>
+        <div class="surface back"><img src="./assets/imgs/door-right.jpg"></div>
+      </div>
+      <!-- #endregion  -->
+
+
+      <!-- #region 简介 -->
+      <div class="brief-info">
+
+        <!-- 跳跃的小球 -->
+        <div class="jump-ball">
+          <span class="sg-jump-ball"></span>
+          <span class="sg-jump-ball"></span>
+          <span class="sg-jump-ball"></span>
+        </div>
+
+        <!-- 缎带 -->
+        <div class="ribbon">
+          <p class="ribbon-knot">Lumina's Blog</p>
+        </div>
+
+        <!-- 简介 -->
+        <div class="brief-info-title">
+          <span>Hello World!</span>
+        </div>
+
+        <!-- 联系方式 -->
+        <div class="contact">
+          <div class="contact-list-trans" style="text-align: left;">&lt;</div>
+          <div class="contact-list" data-tooltip="Wechat">
+            <img src="./assets/imgs/微信.svg" alt="">
+          </div>
+          <div class="contact-list" data-tooltip="Telegram"><img src="./assets/imgs/telegram.svg" alt=""></div>
+          <div class="contact-list-trans" style="text-align: right;">></div>
+        </div>
+      </div>
+      <!-- #endregion  -->
+    </div>
+
+  </section>
+  <!-- #endregion -->
+
+  <div class="main-wrap">
+    <div class="main-body">
+      <div class="left-body">
+
+        <!-- #region 图片展示 -->
+        <div class="left-imgbox-display">
+          <div class="sg-left-img-box">
+            <div class="sg-left-imgbox-img"><img src="./assets/imgs/firstview-1.jpg" alt=""></div>
+            <div class="sg-left-imgbox-text">
+              <h5>Hello</h5>
+              <p>&emsp;World!</p>
+            </div>
+          </div>
+
+
+          <div class="sg-left-img-box">
+            <div class="sg-left-imgbox-img"><img src="./assets/imgs/firstview-2.png" alt=""></div>
+            <div class="sg-left-imgbox-text">
+              <h5>Hello</h5>
+              <p>&emsp;World!</p>
+            </div>
+          </div>
+
+
+          <div class="sg-left-img-box">
+            <div class="sg-left-imgbox-img"><img src="./assets/imgs/cube (2).jpg" alt=""></div>
+            <div class="sg-left-imgbox-text">
+              <h5>Hello</h5>
+              <p>&emsp;World!</p>
+            </div>
+          </div>
+        </div>
+        <!-- #endregion  -->
+
+        <!-- #region 信息轮播跑马灯 -->
+        <div class="sg-left-box marqueen">
+          <span></span>
+          <ul>
+            <li class="sg-marqueen-item">这是第一条信息</li>
+            <li class="sg-marqueen-item">这是第二条信息</li>
+            <li class="sg-marqueen-item">这是第三条信息</li>
+            <li class="sg-marqueen-item">这是第四条信息</li>
+          </ul>
+        </div>
+        <!-- #endregion  -->
+
+        <!-- #region 轮播图 -->
+        <div class="banner-wrap sg-left-box">
+          <ul>
+            <li class="sg-banner-list">
+              <div class="banner-sg-img">
+                <img src="./assets/imgs/firstview-1.jpg" alt="">
+              </div>
+              <div class="banner-sg-text">
+                <h5>轮播图</h5>
+                <div class="banner-sg-text-detail">这是一段轮播图的文字. 它是竖着排布的. </div>
+              </div>
+            </li>
+
+            <li class="sg-banner-list">
+              <div class="banner-sg-img">
+                <img src="./assets/imgs/firstview-2.png" alt="">
+              </div>
+              <div class="banner-sg-text">
+                <h5>轮播图</h5>
+                <div class="banner-sg-text-detail">这是一段轮播图的文字. 它是竖着排布的. </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- #endregion  -->
+
+
+        <!-- #region 文章 -->
+        <div class="article-wrap">
+
+          <div class="sg-left-box sg-article-item">
+            <div class="sg-article-item-img">
+              <img src="./assets/imgs/firstview-1.jpg" alt="">
+            </div>
+
+            <div class="sg-article-item-info">
+              <h5>文章</h5>
+              <div class="banner-sg-text-detail sg-article-item-text">这是一段文章的文字, 它是横着排布的. 本段文字用于测试多行文本, 以评估文本板式即具体情况.
+                因为设置的文本省略设置为 3 行, 因此需要凑很多很多的字, 来确保多行文字省略有可见样式效果(主要为 大屏设备 ).
+              </div>
+            </div>
+          </div>
+
+          <div class="sg-left-box sg-article-item">
+            <div class="sg-article-item-img">
+              <img src="./assets/imgs/firstview-1.jpg" alt="">
+            </div>
+
+            <div class="sg-article-item-info">
+              <h5>文章</h5>
+              <div class="banner-sg-text-detail sg-article-item-text">这是一段文章的文字, 它是横着排布的. 本段文字用于测试多行文本, 以评估文本板式即具体情况.
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- #endregion  -->
+
+        <!-- #region 分页 -->
+        <div class="sg-left-box article-next-page">
+          <div class="page-index page-index-active">1</div>
+          <div class="page-index">2</div>
+        </div>
+        <!-- #endregion  -->
+      </div>
+
+      <div class="right-body">
+
+        <!-- #region 个人信息  -->
+
+        <div class="sg-left-box personal-brief">
+
+          <!-- 头像 -->
+          <div class="phone-personal-img">
+            <img src="./assets/imgs/firstview-2.png" alt="">
+          </div>
+
+          <!-- 用户名 -->
+          <div class="phone-personal-name">Lumina</div>
+
+          <!-- 介绍 -->
+          <div class="phone-personal-brief">群星仅是画师的一瞬, 我们也是.</div>
+
+          <!-- 用户信息 -->
+          <table class="phone-personal-detail">
+            <thead>
+              <tr>
+                <th>文章</th>
+                <th>标签</th>
+                <th>分类</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- #endregion  -->
+
+
+        <!-- #region 手风琴列表 -->
+        <div class="right-body-nav">
+          <ul>
+            <li class="right-body-nav-list">
+
+              <input type="radio" id="info1" name="info" checked>
+              <label for="info1" class="right-body-nav-list-info-title">信息1</label>
+
+              <ul class="right-body-nav-list-info-wrap">
+                <li>这是一段用于段落测试的文本.</li>
+                <li>789</li>
+              </ul>
+
+            </li>
+          </ul>
+
+          <ul>
+            <li class="right-body-nav-list">
+
+              <input type="radio" id="info2" name="info">
+              <label for="info2" class="right-body-nav-list-info-title">信息1</label>
+
+              <ul class="right-body-nav-list-info-wrap">
+                <li>456</li>
+              </ul>
+
+            </li>
+          </ul>
+        </div>
+
+        <!-- #endregion  -->
+
+
+        <!-- #region 评论 -->
+        <div class="sg-left-box comment-wrap">
+          <div class="comment-wrap-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="sg-comment-list">
+
+            <div class="sg-comment">
+              <div class="sg-comment-text">456</div>
+              <div class="sg-comment-info">
+                <div class="sg-comment-time">yyyy-mm-dd</div>
+                <div class="sg-comment-user">By Lumina</div>
+              </div>
+            </div>
+
+            <div class="sg-comment">
+              <div class="sg-comment-text">456</div>
+              <div class="sg-comment-info">
+                <div class="sg-comment-time">yyyy-mm-dd</div>
+                <div class="sg-comment-user">By Lumina</div>
+              </div>
+            </div>
+          </div>
+
+          <input type="checkbox" name="" id="comment-toggle">
+          <label for="comment-toggle">
+            <div class="label-name">撰写: </div>
+            <div class="label-btn"></div>
+          </label>
+
+          <div class="comment-textarea">
+            <textarea></textarea>
+          </div>
+
+          <div class="comment-submit">
+            <button class="btn" type="button">提交</button>
+          </div>
+        </div>
+        <!-- #endregion -->
+
+      </div>
+    </div>
+
+    <!-- #region 页脚 -->
+    <footer id="page-bottom">
+      <div class="footer-wrap">
+        <p>©3202-2023 By Lumina</p>
+        <p>暂时空缺,此行勿删</p>
+      </div>
+    </footer>
+    <!-- #endregion  -->
+  </div>
+
+</body>
+
+</html>
