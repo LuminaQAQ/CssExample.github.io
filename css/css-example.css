@@ -8,7 +8,6 @@ html {
 }
 
 * {
-    transition: all .3s;
     scrollbar-width: none;
 }
 
@@ -40,6 +39,10 @@ ul {
 
 ::selection {
     color: transparent;
+}
+
+:where(.loading-wrap *, .nav-wrap *, .main-wrap *, .first-view-wrap *) {
+    transition: all .3s;
 }
 
 
